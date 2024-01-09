@@ -48,7 +48,7 @@ h1 {
 """, unsafe_allow_html=True)
 
 # Сайдбар для навигации
-st.sidebar.image("erlan.jpg", width=100)
+st.sidebar.image("streamlit/erlan.jpg", width=100)
 st.sidebar.title("Навигация")
 page = st.sidebar.radio(
     "Выберите страницу:",
