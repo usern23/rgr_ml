@@ -68,7 +68,7 @@ def page_developer_info():
     
     with col2:
         st.header("Фотография")
-        st.image("erlan.jpg", width=200)
+        st.image("streamlit/erlan.jpg", width=200)
     
     st.header("Тема РГР")
     st.write("Разработка Web-приложения для инференса моделей ML и анализа данных")
