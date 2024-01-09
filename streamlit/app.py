@@ -17,9 +17,9 @@ from sklearn.pipeline import make_pipeline
 from tensorflow.keras.models import load_model
 from sklearn.metrics import accuracy_score
 
-model_save_path = 'C:/Users/Admin/Desktop/streamlit/streamlit-models/'
+model_save_path = 'streamlit/streamlit-models/'
 
-airlines_data = pd.read_csv("C:/Users/Admin/Desktop/streamlit/airlines.csv")
+airlines_data = pd.read_csv("streamlit/airlines.csv")
 X = airlines_data.drop('Delay', axis=1)
 y = airlines_data['Delay']
 
@@ -163,7 +163,7 @@ def page_ml_prediction():
     # Интерактивный ввод данных, если файл не загружен
     if uploaded_file is None:
         st.subheader("Введите данные для предсказания:")
-        airlines_data = pd.read_csv('C:/Users/Admin/Desktop/streamlit/airlines.csv')
+        airlines_data = pd.read_csv('streamlit/airlines.csv')
 
         # Интерактивные поля для ввода данных
         input_data = {}
